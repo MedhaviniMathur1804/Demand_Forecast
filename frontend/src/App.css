@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.input-container {
+  margin: 20px;
+}
+
+input[type="text"], input[type="date"] {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.result-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  background-color: #3a3f4a;
+}
+
+.status-container {
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  background-color: #3a3f4a;
+  min-width: 300px;
+}
+
+.status-container h3 {
+  margin: 0 0 10px 0;
+  color: #61dafb;
+}
+
+.status-container p {
+  margin: 5px 0;
+}
+
+.button-container {
+  margin: 20px;
+}
+
+.train-button {
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+}
+
+.train-button:hover:not(:disabled) {
+  background-color: #f57c00;
+}
+
+.instructions {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  background-color: #3a3f4a;
+  max-width: 600px;
+  text-align: left;
+}
+
+.instructions h3 {
+  color: #61dafb;
+  margin-top: 0;
+}
+
+.instructions ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.instructions a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.instructions a:hover {
+  text-decoration: underline;
+}
+
+.instructions code {
+  background-color: #555;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+}
